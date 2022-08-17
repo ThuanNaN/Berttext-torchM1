@@ -34,7 +34,7 @@ bert = BertModel.from_pretrained('bert-base-cased')
 ```
 
 ## 3. Evaluate
-### 3.1 DeviceS:
+### 3.1 Devices:
 - Apple M1:
   + CPU/GPU: Macbook Pro M1
   + RAM: 16GB
