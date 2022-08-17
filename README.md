@@ -38,7 +38,7 @@ bert = BertModel.from_pretrained('bert-base-cased')
 - Apple M1:
   + CPU/GPU: Macbook Pro M1
   + RAM: 16GB
-- Colab:
+- Colab :
   + GPU: Tesla P100 16GB
   + RAM: 32GB (high-ram)
 #### Parameter:
@@ -50,7 +50,7 @@ bert = BertModel.from_pretrained('bert-base-cased')
 |Device  |GPU    |CPU     |
 |--------|-------|--------|
 |Apple M1|47m10s | 51m20s |
-|Colab   |6m40s  |   *    |
+|Colab Pro|6m40s  |   *    |
 
 (*)take an hour for complete 20% of epoch. 
 
