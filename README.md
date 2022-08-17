@@ -1,4 +1,4 @@
-# Text classification with pre-trained BERT-base model using GPU of M1 Silicon
+# Text classification with pre-trained BERT-base model using M1 Silicon
 
 ## 1. Setup on M1
 ### Install virtual enviroment with anaconda:
@@ -34,6 +34,13 @@ bert = BertModel.from_pretrained('bert-base-cased')
 ```
 
 ## 3. Evaluate
+### 3.1 DeviceS:
+- Apple M1:
+  + CPU/GPU: Macbook Pro M1
+  + RAM: 16GB
+- Colab:
+  + GPU: Tesla P100 16GB
+  + RAM: 32GB (high-ram)
 #### Parameter:
 - max_length: 512
 - batch_size: 8
@@ -43,8 +50,9 @@ bert = BertModel.from_pretrained('bert-base-cased')
 |Device  |GPU    |CPU |
 |--------|-------|-----|
 |Apple M1|47m10s | 10m |
-|Colab   |6m40s  | 10m |
+|Colab   |6m40s  | * |
 
+(*)take an hour for complete 20% of epoch. 
 
 
 ## 4. Reference
