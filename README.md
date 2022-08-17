@@ -1,4 +1,4 @@
-# Text classification with BERT model using GPU of M1 Silicon
+# Text classification with pre-trained BERT-base model using GPU of M1 Silicon
 
 ## 1. Setup on M1
 ### Install virtual enviroment with anaconda:
@@ -25,7 +25,26 @@ Or only using CPU of M1:
 #device = torch.device('cpu')
 ```
 
+### 2.3 Load model pre-trained:
+```
+from transformers import BertTokenizer, BertModel
+
+tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
+bert = BertModel.from_pretrained('bert-base-cased')
+```
+
 ## 3. Evaluate
+#### Parameter:
+- max_length: 512
+- batch_size: 8
+
+#### Results (per every epoch):
+
+|Device  |GPU    |CPU |
+|--------|-------|-----|
+|Apple M1|47m10s | 10m |
+|Colab   |6m40s  | 10m |
+
 
 
 ## 4. Reference
