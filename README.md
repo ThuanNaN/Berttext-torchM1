@@ -47,10 +47,10 @@ bert = BertModel.from_pretrained('bert-base-cased')
 
 #### Results (per every epoch):
 
-|Device  |GPU    |CPU |
-|--------|-------|-----|
-|Apple M1|47m10s | 10m |
-|Colab   |6m40s  | * |
+|Device  |GPU    |CPU     |
+|--------|-------|--------|
+|Apple M1|47m10s | 51m20s |
+|Colab   |6m40s  |   *    |
 
 (*)take an hour for complete 20% of epoch. 
 
