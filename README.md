@@ -30,3 +30,4 @@ Or only using CPU of M1:
 
 ## 4. Reference
 - https://pytorch.org/docs/master/notes/mps.html
+- https://towardsdatascience.com/installing-pytorch-on-apple-m1-chip-with-gpu-acceleration-3351dc44d67c
